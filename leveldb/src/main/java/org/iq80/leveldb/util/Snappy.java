@@ -218,6 +218,7 @@ public final class Snappy
                 attempt = (SPI) Thread.currentThread().getContextClassLoader().loadClass(name).newInstance();
             }
             catch (Throwable e) {
+                e.printStackTrace();
             }
         }
         SNAPPY = attempt;
